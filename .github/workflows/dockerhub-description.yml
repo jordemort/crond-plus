@@ -16,7 +16,7 @@ jobs:
       uses: peter-evans/dockerhub-description@v2
       with:
         username: ${{ secrets.REGISTRY_USERNAME }}
-        password: ${{ secrets.REGISTRY_TOKEN }}
+        password: ${{ secrets.REGISTRY_PASSWORD }}
         repository: peterevans/dockerhub-description
         short-description: ${{ github.event.repository.description }}
         readme-filepath: ./README.md
